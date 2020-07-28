@@ -20,7 +20,9 @@ a {
 .flex {
     display: flex;
 }
-
+.flex-1-0-0 {
+    flex: 1 0 0;
+}
 .flex-jc-sb {
     justify-content: space-between;
 }
@@ -86,8 +88,5 @@ a {
     background-repeat: no-repeat;
 }
 
-.page-1>img {
-    height: 100%;
-}
 
 /* 페이지 끝 */
