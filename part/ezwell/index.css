@@ -1,0 +1,93 @@
+/* nomal */
+html {
+    font-family: 'Noto Sans KR', 'Malgun Gothic', 'Dotum', sans-serif;
+}
+
+body,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* lib */
+.flex {
+    display: flex;
+}
+
+.flex-jc-sb {
+    justify-content: space-between;
+}
+
+.flex-jc-sa {
+    justify-content: space-around;
+}
+
+.flex-jc-c {
+    justify-content: center;
+}
+
+.flex-ai-c {
+    align-items: center;
+}
+
+.flex-jc-s {
+    justify-content: flex-start;
+}
+
+.flex-ai-s {
+    align-items: flex-start;
+}
+
+.border-red {
+    border: 3px solid red;
+}
+
+.border-blue {
+    border: 3px solid blue;
+}
+
+.height-100p {
+    height: 100%;
+}
+
+/* cus */
+
+.top-bar {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    padding: 0 100px;
+    box-sizing: border-box;
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+.top-bar>nav>ul>li>a {
+    padding: 0 30px;
+    font-weight: bold;
+
+}
+
+/* 페이지 시작 */
+.page-1 {
+    background-image: url(http://img.ezwelfare.net/welfare_corp/css/user/front/pc/images/_temp/main-slider-img03.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.page-1>img {
+    height: 100%;
+}
+
+/* 페이지 끝 */
