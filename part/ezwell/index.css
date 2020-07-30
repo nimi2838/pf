@@ -47,6 +47,13 @@ a {
     align-items: flex-start;
 }
 
+.flex-dr-r {
+  flex-direction: row;
+}
+.flex-dr-c {
+    flex-direction: column;
+  }
+
 .border-red {
     border: 3px solid red;
 }
@@ -76,7 +83,14 @@ a {
 .top-bar>nav>ul>li>a {
     padding: 0 30px;
     font-weight: bold;
+}
+.top-bar>nav>ul>li>.sub-menu {
+    
+}
 
+.top-bar:hover {
+  background-color:white;
+  color:black;
 }
 
 /* 페이지 시작 */
