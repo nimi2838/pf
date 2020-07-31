@@ -78,6 +78,7 @@ a {
     box-sizing: border-box;
     color: white;
     border-bottom: 1px solid white;
+    transition: background-color 0.5s, color 0.5s;
 }
 
 .top-bar > .logo-box {
@@ -106,9 +107,34 @@ a {
     font-weight: bold;
 }
 
+.top-bar>nav>ul>li {
+    position: relative;
+}
+
+.top-bar>nav>ul>li::after{
+ content: "";
+ display: block;
+ border-bottom: 3px solid #005ec5;
+ position: absolute;
+ left: 50%;
+ transform: translateX(-50%);
+ width: 0%;
+ opacity: 0;
+ transition: 0.5s;
+ border-radius: 5px;
+}
+
+
+
 .top-bar:hover {
   background-color:white;
   color:black;
+}
+
+.top-bar>nav>ul>li:hover::after{
+    width: 50%;
+    opacity: 1;
+    color: #005ec5;
 }
 
 /* 페이지 시작 */
