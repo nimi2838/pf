@@ -105,6 +105,10 @@ a {
 .top-bar>nav>ul>li>a {
     padding: 0 70px;
     font-weight: bold;
+    cursor: pointer;
+}
+.top-bar>nav>ul>.sub-menu {
+    display: none;
 }
 
 .top-bar>nav>ul>li {
