@@ -103,20 +103,21 @@ a {
     margin-left: 400px;
 }
 .top-bar>nav>ul>li>a {
-    padding: 0 70px;
+
     font-weight: bold;
-    cursor: pointer;
     font-size: 20px;
+    position: relative;
 }
 .top-bar>nav>ul>.sub-menu {
     display: none;
 }
 
 .top-bar>nav>ul>li {
+    padding: 0 70px;
     position: relative;
 }
 
-.top-bar>nav>ul>li::after{
+.top-bar>nav>ul>li>a::after{
  content: "";
  display: block;
  border-bottom: 3px solid #005ec5;
@@ -130,6 +131,15 @@ a {
  border-radius: 5px;
 }
 
+.top-bar>nav>ul>li:hover>a::after{
+    width: 100%;
+    opacity: 1;
+    color: #005ec5;
+}
+.top-bar>nav>ul>li>a:hover {
+    color: #005ec5;
+}   
+
 .top-bar:hover {
   background-color:white;
   color:black;
@@ -141,14 +151,7 @@ a {
     visibility: visible;
 }
 
-.top-bar>nav>ul>li:hover::after{
-    width: 50%;
-    opacity: 1;
-    color: #005ec5;
-}
-.top-bar>nav>ul>li:hover {
-    color: #005ec5;
-}   
+
 
 
 
